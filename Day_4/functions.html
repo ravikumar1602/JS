@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions in JS</h1>
+    <input type="number" id="num1"><br><br>
+    <input type="text" id="num2"><br><br>
+    <button onclick="sum()">submit</button>
+    <script>
+
+        
+        function sum(){
+            let num1=parseInt(document.getElementById('num1').value);
+            let num2=parseInt(document.getElementById('num2').value);
+            console.log(typeof num1);
+            console.log(typeof num2);
+            console.log(num1+num2);
+        }
+//     const show=()=>{   //anonymous function
+//     console.log('inside arrow show function');
+//     return "peter"
+    
+// }
+// console.log(show);
+
+// console.log(show()); 
+
+// function display(){
+//     console.log('display function');
+//     return "Hello"
+// }
+
+// // case 1
+// let a=display();
+// console.log(a);
+
+// // case 2
+// let b=display();
+// console.log(b());
+
+// // case 3
+// let c=display;
+// console.log(c());
+
+
+// function outer(){
+//     let a=10;
+//     console.log("outer function");
+//     function inner(){
+//         let b=20;
+//         console.log('the value of a and b is',a,b);
+       
+//     }
+//     return inner()
+// }
+
+// outer()
+
+// let a=outer();
+// console.log(a);
+// console.log(a());
+
+// outer()(); 
+
+
+// console.log("hello");
+// (function display(){
+//     console.log("display");
+// })()
+
+
+
+
+    </script>
+</body>
+</html>
