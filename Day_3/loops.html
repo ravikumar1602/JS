@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="rightanswer"></div>
+    <script>
+        // do {
+        //     userInpot = prompt("Enter a word 'Stop' to exit");
+        // }
+        // while (userInpot != 'stop')
+
+        let correctAnswer=3;
+        let totalAttemps=5;
+        let userGuess;
+        let guessCorrectly=false;
+        do{
+            userGuess =prompt("Guess a Number")
+            if(userGuess==correctAnswer){
+                guessCorrectly=true;
+                document.getElementById('rightanswer').innerHTML='<h1>Congrats you have guess right answer.</h1>'
+                break;
+
+            }
+            else{
+                totalAttemps--;
+                alert('try again')
+
+            }
+        }
+        while(totalAttemps>0 && !guessCorrectly);
+        if(!guessCorrectly && totalAttemps==0){
+            document.getElementById('rightanswer').innerHTML="you have used your all attemps"
+        }
+
+    </script>
+</body>
+</html>
